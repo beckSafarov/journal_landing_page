@@ -10,7 +10,7 @@
   }
   .controls{
     position: absolute; 
-    top: 40%; 
+    top: 35%; 
     // background: green;
     width: 104%; 
     margin-left: -25px;
@@ -19,6 +19,7 @@
     div{
       position: relative;
       background: #FFFFFF;
+      // background: green;
       cursor: pointer;
       // background: green;
       width: 48px;
@@ -30,6 +31,10 @@
       svg{
         font-size: 17px;
       }
+    }
+    @media(min-width: 1900px){
+      width: 103%;
+      left: -1px;
     }
   }
 }
