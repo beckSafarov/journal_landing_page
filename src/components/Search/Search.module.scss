@@ -1,0 +1,26 @@
+.searchBoxContainer {
+  padding: 16px 24px;
+  display: flex;
+  .searchBox {
+    background: #F5F5F7;
+    display: flex;
+    gap: 8px;
+    // width: 346px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      padding: 20px 0 20px 26px;
+      justify-content: center;
+      color: #9A999B;
+    }
+
+    input {
+      height: 58px;
+    }
+  }
+}

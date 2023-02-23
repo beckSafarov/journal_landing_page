@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+
+.container{
+  .title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    color: #020105;
+  }
+  .cardsContainer{
+    @include grid(3);
+    gap: 24px;
+  }
+  .more {
+    @include moreSection;
+  }
+}

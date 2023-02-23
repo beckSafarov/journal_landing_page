@@ -1,0 +1,53 @@
+@import '../../../styles/mixins';
+
+.card{
+  background: #fff;
+  padding: 24px;
+  display: flex;
+  width: 550px;
+  .logo{
+    flex: 1;
+  }
+  .textContent{
+    padding-left: 16px;
+    flex: 3;
+    .title{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: #353437;
+    }
+    .title.active{
+      color: rgba(60, 75, 220, 1);
+    }
+    .contacts{
+      margin-top: 18px;
+      // background: green;
+      @include flexCol; 
+      gap: 15px;
+      .row{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .icon{
+          @include flexCenter();
+          color: rgba(60, 75, 220, 1);
+          font-size: 15px;
+        }
+        .label{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #5D5D5F;
+        }
+      }
+    }
+  }
+}
+
+.fax{
+  sub{
+    font-size: 8px;
+  }
+}

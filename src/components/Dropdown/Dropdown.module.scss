@@ -1,0 +1,21 @@
+@import '../../styles/mixins';
+
+.container{
+  .label {
+      @include flexCenter();
+      gap: 10px;
+      cursor: pointer;
+  }
+  .content{
+    position: absolute;
+    background: #fff;
+    padding: 0 10px;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    min-width: 80px;
+    text-align: center;
+    p{
+      cursor: pointer;
+    }
+  }
+}

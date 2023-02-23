@@ -1,0 +1,76 @@
+@import '../../styles/mixins';
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  // width: 408px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  width: 290px;
+  margin-top: 20px;
+  padding: 32px 20px;
+
+  .imgContainer{
+    @include flexCenter();
+    .img {
+      height: 316px;
+      width: 180px;
+    }
+  }
+  .textContent{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .nameRow {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        
+        .name {
+          font-weight: 400;
+          font-size: 14px;
+          color: #2D6D76;
+          margin: 0;
+        }
+        .views{
+          @include flexCenter();
+          gap: 8px;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 150%;
+          color: #2D6D76;
+        }
+      }
+    
+      .description {
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #020105;
+      }
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    
+    .date{
+      color: #5D5D5F;
+      @include flexCenter();
+      gap: 10px;
+    }
+    .circle{
+      font-size: 20px;
+      cursor: pointer;
+      @include flexCenter();
+      color: rgba(60, 75, 220, 1);
+      bottom: 0%;
+      border-radius: 60px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #3C4BDC;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../styles/mixins';
+
+.container{
+  display: flex;
+  padding: 50px 0;
+  .statBox{
+    position: relative;
+    @include flexCol;
+    height: 300px;
+    width: 300px;
+    // background: green;
+    .circle{
+      position: absolute;
+      border: 1px solid #DADADA;
+      border-radius: 1000px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #DADADA;
+      border-radius: 1000px;
+    }
+    .circle.active{
+      border-color: rgba(60, 75, 220, 1);
+    }
+    .title{
+      font-weight: 600;
+      font-size: 45px;
+      text-align: center;
+      color: #5D5D5F;
+    }
+    .subtitle{
+      font-weight: 500;
+      font-size: 21px;
+      text-align: center;
+      color: #5D5D5F;
+    }
+    .active{
+      color: rgba(60, 75, 220, 1);
+    }
+  }
+}

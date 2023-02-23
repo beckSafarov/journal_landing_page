@@ -1,0 +1,44 @@
+@import '../../styles/mixins';
+.container{
+  background: rgba(0, 0, 0, 0.64);
+  border: 1px solid #EBEBEB;
+  border-radius: 24px;
+  .leftContent{
+    width: 50%;
+    padding-left: 64px;
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    justify-content: center;
+    .title{
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+    .subtitle{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+    .btn{
+      cursor: pointer;
+      margin-top: 24px;
+      width: 232px;
+      height: 64px;
+      background: #3C4BDC;
+      border-radius: 16px;
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      color: #FFFFFF;
+      @include flexCenter();
+      gap: 15px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../styles/mixins';
+
+.container{
+  @include flexCol;
+  gap: 20px;
+  .cardsContainer{
+    position: relative;
+    display: flex;
+    gap: 24px;
+  }
+  .controls{
+    position: absolute; 
+    top: 40%; 
+    // background: green;
+    width: 104%; 
+    margin-left: -25px;
+    display: flex;
+    justify-content: space-between;
+    div{
+      position: relative;
+      background: #FFFFFF;
+      cursor: pointer;
+      // background: green;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      box-shadow: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.16);
+      // background: green;
+      @include flexCenter();
+      svg{
+        font-size: 17px;
+      }
+    }
+  }
+}

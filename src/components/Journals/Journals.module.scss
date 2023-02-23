@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+
+.container{
+  .title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    color: #020105;
+  }
+  .journals{
+    margin-top: 24px;
+    @include grid(4);
+  }
+  .more{
+    @include moreSection;
+  }
+}

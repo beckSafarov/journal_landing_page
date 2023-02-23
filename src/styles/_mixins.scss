@@ -1,0 +1,36 @@
+@mixin flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexCol {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@mixin grid($n:4){
+  display: grid;
+  grid-template-columns: repeat($n, 1fr);
+}
+
+@mixin moreSection{
+  @include flexCenter();
+  margin-top: 48px;
+
+  .moreBtn {
+    @include flexCenter();
+    background: none;
+    padding: 16px 32px;
+    gap: 8px;
+    width: 194px;
+    height: 56px;
+    border: 1px solid #3C4BDC;
+    border-radius: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3C4BDC;
+    cursor: pointer;
+  }
+}
