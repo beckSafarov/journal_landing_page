@@ -14,7 +14,10 @@ const contactsData = [
   { Icon: GiEarthAfricaEurope, label: 'http://www.frccsc.ru' },
 ]
 
-const PlannedConferenceCard = () => {
+const PlannedConferenceCard = ({isActive}) => {
+   const getClass = (baseClass) => {
+     return isActive ? `${s[baseClass]} ${s.active}` : `${s[baseClass]}`
+   }
   return (
     <div className={s.card}>
       <div className={s.dateContainer}>
@@ -32,7 +35,7 @@ const PlannedConferenceCard = () => {
           </div>
         ))}
       </div>
-      <div className={s.footer}/>
+      <div className={getClass('footer')}/>
     </div>
   )
 }

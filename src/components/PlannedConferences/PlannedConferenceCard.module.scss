@@ -1,5 +1,6 @@
 @import '../../styles/mixins';
 .card{
+  cursor: pointer;
   position: relative;
   margin-top: 15px;
   height: 285px;
@@ -60,5 +61,8 @@
   }
   .footer.active{
     background: #3C4BDC;
+  }
+  @media(min-width: 1900px) {
+    height: fit-content;
   }
 }

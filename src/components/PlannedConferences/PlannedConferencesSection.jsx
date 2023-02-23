@@ -24,7 +24,7 @@ const PlannedConferencesSection = () => {
         {Array(12)
           .fill(0)
           .map((_, i) => (
-            <PlannedConferenceCard key={i} />
+            <PlannedConferenceCard key={i} isActive={i === 1} />
           ))}
       </div>
       <div className={s.more}>

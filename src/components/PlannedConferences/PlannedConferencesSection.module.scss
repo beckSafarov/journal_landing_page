@@ -14,4 +14,9 @@
   .more {
     @include moreSection;
   }
+  @media(min-width: 1900px){
+    .cardsContainer{
+      @include grid(4);
+    }
+  }
 }
