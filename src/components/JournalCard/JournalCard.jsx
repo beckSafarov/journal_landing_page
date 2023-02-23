@@ -8,7 +8,7 @@ const JournalCard = ({data}) => {
   return (
     <div className={s.container}>
       <div className={s.imgContainer}>
-        <img src={sample} className={s.img} alt={'Image here'} />
+        <img src={data.image} className={s.img} alt={'Image here'} />
       </div>
       <div className={s.textContent}>
         <div className={s.nameRow}>

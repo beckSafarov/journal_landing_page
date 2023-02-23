@@ -19,7 +19,8 @@
     font-size: 12px;
     line-height: 150%;
     color: #5D5D5F;
-    @include flexCenter();
+    display: flex;
+    align-items: center;
     gap: 10px;
   }
   .title{

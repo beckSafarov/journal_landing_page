@@ -16,16 +16,19 @@ const PlannedConferencesSection = () => {
       setData(data)
     })()
   }, [])
-  
+  console.log(data)
   return (
     <div className={s.container}>
       <Title>Планируемые конференции</Title>
       <div className={s.cardsContainer}>
-        {Array(12)
+        {data.map((cardData, i) => (
+            <PlannedConferenceCard key={i} isActive={i === 1} data={cardData} />
+          ))}
+        {/* {Array(12)
           .fill(0)
           .map((_, i) => (
             <PlannedConferenceCard key={i} isActive={i === 1} />
-          ))}
+          ))} */}
       </div>
       <div className={s.more}>
         <button className={s.moreBtn}>

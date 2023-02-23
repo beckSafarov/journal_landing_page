@@ -16,7 +16,7 @@ const Journals = () => {
       setData(data.results)
     })()
   }, [])
-
+  
   return (
     <div className={s.container}>
       <Title>Journals</Title>

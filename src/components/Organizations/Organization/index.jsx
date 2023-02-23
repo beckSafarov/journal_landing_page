@@ -2,6 +2,7 @@ import s from './OrganizationCard.module.scss'
 import {HiOutlinePhone} from 'react-icons/hi'
 import {TfiLocationPin} from 'react-icons/tfi'
 import { IoMail, IoEarthOutline } from 'react-icons/io5'
+import Avatar from '../../Avatar/Avatar'
 
 const FAX = () => {
   return <div className={s.fax}><HiOutlinePhone/> <sub>Fax</sub></div>
@@ -21,9 +22,7 @@ const OrganizationCard = ({data, isActive}) => {
 
   return (
     <div className={s.card}>
-      <div className={s.logo}>
-        <img src={'/cardLogo.png'} alt='logo' width={64} height={64} />
-      </div>
+      <Avatar src={data.logo} size={64} />
       <div className={s.textContent}>
         <div className={isActive ? `${s.title} ${s.active}` : `${s.title}`}>
           {data.name_ru}
