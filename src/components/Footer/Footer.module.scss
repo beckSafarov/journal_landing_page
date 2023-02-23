@@ -15,8 +15,10 @@
   padding: 40px 120px;
   .columnsContainer{
     display: flex;
-    // justify-content: space-between;
-    gap: 50px;
+    justify-content: space-between;
+    @media(max-width: 1500px){
+      gap: 50px;
+    }
     .col{
       display: flex;
       align-items: flex-start;
