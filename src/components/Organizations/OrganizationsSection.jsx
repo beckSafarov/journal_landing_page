@@ -17,7 +17,7 @@ const OrganizationsSection = () => {
       setData(data.results)
     })()
   }, [])
-  console.log(data)
+
   return (
     <div className={s.container}>
       <Title>Организации</Title>

@@ -1,0 +1,45 @@
+@import '../../styles/mixins';
+
+.container{
+  display: flex;
+  gap: 24px;
+  * {
+    flex: 1;
+  }
+}
+
+.ourOfficeCard{
+  @include flexCol;
+  gap: 40px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 40px;
+  .contactInfo{
+    @include grid(2);
+    .infoBox{
+      @include flexCol;
+      gap: 16px;
+      .title{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #020105;
+      }
+      .content{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #353437;
+      }
+    }
+    .infoBox:nth-child(3){
+      margin-top: 40px;
+    }
+  }
+}
+.map{
+  background: #FFFFFF;
+  border: 1px solid rgba(194, 194, 195, 1);
+  border-radius: 40px;
+}

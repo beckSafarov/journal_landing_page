@@ -6,6 +6,7 @@ import Journals from './components/Journals/Journals'
 import Stats from './components/Stats/Stats';
 import PlannedConferencesSection from './components/PlannedConferences/PlannedConferencesSection';
 import OrganizationsSection from './components/Organizations/OrganizationsSection';
+import OurAddressSection from './components/OurAddressSection/OurAddressSection';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Stats/>
       <PlannedConferencesSection/>
       <OrganizationsSection/>
+      <OurAddressSection/>
     </div>
   );
 }
