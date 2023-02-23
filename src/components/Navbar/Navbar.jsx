@@ -5,6 +5,7 @@ import {IoEnterOutline} from 'react-icons/io5'
 import {FiSearch} from 'react-icons/fi'
 import Dropdown from '../Dropdown/Dropdown'
 import Search from '../Search/Search'
+import Journal from '../Journal/Journal'
 const menuLinks=[
   {name: "Link 1", type: "simple"},
   {name: "Link 2", type: "simple"},
@@ -27,10 +28,7 @@ const Navbar = () => {
   return (
     <div className={s.container}>
       <div className={s.row}>
-        <div className={s.journalContainer}>
-          <div className={s.circle} />
-          <span className={s.title}>Journal</span>
-        </div>
+        <Journal/>
         <div className={s.menuLinks}>
           {menuLinks.map((link, i) => (
             <React.Fragment key={i}>

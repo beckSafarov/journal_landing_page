@@ -7,6 +7,7 @@ import Stats from './components/Stats/Stats';
 import PlannedConferencesSection from './components/PlannedConferences/PlannedConferencesSection';
 import OrganizationsSection from './components/Organizations/OrganizationsSection';
 import OurAddressSection from './components/OurAddressSection/OurAddressSection';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <PlannedConferencesSection/>
       <OrganizationsSection/>
       <OurAddressSection/>
+      <Footer/>
     </div>
   );
 }

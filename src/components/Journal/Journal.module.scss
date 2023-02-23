@@ -1,0 +1,21 @@
+@import '../../styles/mixins';
+
+.journalContainer {
+  @include flexCenter();
+  gap: 15px;
+
+  .circle {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #3C4BDC;
+    border-radius: 60px;
+  }
+
+  .title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #353437;
+  }
+}

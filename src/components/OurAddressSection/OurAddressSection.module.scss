@@ -20,7 +20,7 @@
       @include flexCol;
       gap: 16px;
       .title{
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 150%;
         color: #020105;
@@ -30,7 +30,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 160%;
-        color: #353437;
+        color: rgba(53, 52, 55, 1)
       }
     }
     .infoBox:nth-child(3){
