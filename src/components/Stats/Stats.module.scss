@@ -4,14 +4,12 @@
   display: flex;
   padding: 50px 0;
   min-height: 500px;
-  // background: green;
   position: relative;
   .statBox{
     position: relative;
     @include flexCol;
     height: 300px;
     width: 300px;
-    // background: green;
     @media(min-width: 1900px) {
         width: 456px;
         height: 456px;
@@ -48,5 +46,8 @@
     .active{
       color: rgba(60, 75, 220, 1);
     }
+  }
+  @media(min-width: 1900px){
+    min-height: 600px;
   }
 }

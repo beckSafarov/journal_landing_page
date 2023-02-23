@@ -16,7 +16,6 @@ const JournalCard = ({data}) => {
           <span className={s.views}> <AiOutlineEye/> 320</span>
         </div>
         <p className={s.description}>
-          {/* {data.description_ru} */}
           Журнал иновационных иследований в текстильной и легкой
           промышленности...
         </p>
