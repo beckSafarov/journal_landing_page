@@ -12,7 +12,7 @@ const Search = ({width, height}) => {
         <input
           style={{ height }}
           className={s.searchBox}
-          placeholder='Search'
+          placeholder='Поиск'
         />
       </div>
     </div>
