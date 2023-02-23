@@ -33,8 +33,7 @@ const OurAddressSection = () => {
           loading='lazy'
           allowfullscreen
           referrerpolicy='no-referrer-when-downgrade'
-          src='https://www.google.com/maps/embed/v1/place?key=AIzaSyAjcD2jgxEexg6NFahXy40SLmyy6LK3Aj0
-    &q=Space+Needle,Seattle+WA'
+          src='https://www.google.com/maps/embed/v1/place?key=API_KEY'
         /> */}
       </div>
     </div>
