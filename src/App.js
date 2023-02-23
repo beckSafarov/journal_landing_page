@@ -12,15 +12,17 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className={s.container}>
-      <Navbar/>
-      <Hero/>
-      <SearchSection/>
-      <Journals/>
-      <Stats/>
-      <PlannedConferencesSection/>
-      <OrganizationsSection/>
-      <OurAddressSection/>
-      <Footer/>
+      <div className={s.wrapper}>
+        <Navbar />
+        <Hero />
+        <SearchSection />
+        <Journals />
+        <Stats />
+        <PlannedConferencesSection />
+        <OrganizationsSection />
+        <OurAddressSection />
+        <Footer />
+      </div>
     </div>
   );
 }

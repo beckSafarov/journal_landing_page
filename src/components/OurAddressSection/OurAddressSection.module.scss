@@ -42,4 +42,5 @@
   background: #FFFFFF;
   border: 1px solid rgba(194, 194, 195, 1);
   border-radius: 40px;
+  @include flexCenter();
 }

@@ -24,7 +24,19 @@ const OurAddressSection = () => {
           ))}
         </div>
       </div>
-      <div className={s.map}></div>
+      <div className={s.map}>
+        <img style={{width: '100%', height: '100%'}} src={'/map.png'} alt='image'/>
+        {/* <iframe
+          // width='600'
+          // height='450'
+          style={{border: 'none', width: '90%', height: '90%'}}
+          loading='lazy'
+          allowfullscreen
+          referrerpolicy='no-referrer-when-downgrade'
+          src='https://www.google.com/maps/embed/v1/place?key=AIzaSyAjcD2jgxEexg6NFahXy40SLmyy6LK3Aj0
+    &q=Space+Needle,Seattle+WA'
+        /> */}
+      </div>
     </div>
   )
 }

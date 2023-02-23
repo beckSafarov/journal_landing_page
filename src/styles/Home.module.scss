@@ -15,8 +15,19 @@ html, body{
 .container{
   width: 100%;
   background: #F6F8F9;
-  padding: 40px 108px;
+  padding: 40px 0;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+@media(min-width: 1900px){
+  .wrapper{
+    width: 1400px;
+  }
 }

@@ -3,12 +3,19 @@
 .container{
   display: flex;
   padding: 50px 0;
+  min-height: 500px;
+  // background: green;
+  position: relative;
   .statBox{
     position: relative;
     @include flexCol;
     height: 300px;
     width: 300px;
     // background: green;
+    @media(min-width: 1900px) {
+        width: 456px;
+        height: 456px;
+      }
     .circle{
       position: absolute;
       border: 1px solid #DADADA;
@@ -17,6 +24,11 @@
       height: 300px;
       border: 1px solid #DADADA;
       border-radius: 1000px;
+      
+      @media(min-width: 1900px){
+        width: 456px;
+        height: 456px;
+      }
     }
     .circle.active{
       border-color: rgba(60, 75, 220, 1);
