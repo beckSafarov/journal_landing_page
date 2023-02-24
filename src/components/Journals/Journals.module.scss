@@ -17,7 +17,9 @@
       @include grid(2);
     }
     @include mobile {
-      @include grid(1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
   .more{

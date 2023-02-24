@@ -18,9 +18,9 @@ function App() {
         <Navbar />
         <Hero />
         <SearchSection />
+        <Journals />
         {(isDesktop || isTablet) && (
           <>
-            <Journals />
             <Stats />
             <PlannedConferencesSection />
             <OrganizationsSection />
