@@ -3,6 +3,9 @@
 .container{
   display: flex;
   gap: 24px;
+  @include lowEndDevices{
+    flex-direction: column;
+  }
   * {
     flex: 1;
   }

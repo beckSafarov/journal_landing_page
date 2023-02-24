@@ -21,10 +21,10 @@ function App() {
         <Journals />
         <PlannedConferencesSection />
         <OrganizationsSection />
+        <OurAddressSection />
         {isDesktop && (
           <>
             {/* <Stats /> */}
-            <OurAddressSection />
             <Footer /></>
         )}
       </div>
