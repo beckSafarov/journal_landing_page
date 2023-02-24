@@ -15,6 +15,9 @@
       border: 1px solid #EBEBEB;
       border-radius: 0px 8px 8px 0px;
       @include flexCenter();
+      @include mobile{
+        padding: 10px;
+      }
       .btn {
         cursor: pointer;
         border: none;
@@ -26,8 +29,11 @@
         height: 39px;
         background: #3C4BDC;
         border-radius: 46px;
-        @media(min-width: 1900px){
+        @include bigScreens{
           font-size: 16px;
+        }
+        @include mobile {
+          width: 100%;
         }
       }
     }
