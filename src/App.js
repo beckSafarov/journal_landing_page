@@ -22,10 +22,10 @@ function App() {
         <Stats />
         <PlannedConferencesSection />
         <OrganizationsSection />
+        <OurAddressSection />
+        <Footer />
         {(isDesktop || isTablet) && (
           <>
-            <OurAddressSection />
-            <Footer />
           </>
         )}
       </div>
