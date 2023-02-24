@@ -19,9 +19,9 @@ function App() {
         <Hero />
         <SearchSection />
         <Journals />
+        <Stats />
         {(isDesktop || isTablet) && (
           <>
-            <Stats />
             <PlannedConferencesSection />
             <OrganizationsSection />
             <OurAddressSection />

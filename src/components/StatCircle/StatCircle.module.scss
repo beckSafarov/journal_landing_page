@@ -1,11 +1,14 @@
 @import '../../styles/mixins';
 
+@mixin size($s){
+  width: $s;
+  height: $s;
+}
 .circle{
   border: 1px solid #DADADA;
   position: absolute;
   border-radius: 1000px;
-  width: 370px;
-  height: 370px;
+  @include size(370px);
   @include flexCenter;
   .content{
     display: flex;
@@ -38,8 +41,13 @@
     height: 456px;
   }
   @include tablets{
-    width: 300px;
-    height: 300px;
+    @include size(350px);
+  }  
+  @include mobile{
+    @include size(300px)
+  }
+  @include smallMobile{
+    @include size(250px)
   }
 }
 
@@ -47,10 +55,11 @@
   left: 0;
   @include lowEndDevices{
     left: 0;
-    // right: 50%;
     margin: 0 50% 0 30%;
-    // transform: translateX(50%);
     top: 0;
+  }
+  @include mobile{
+    margin: 0 10%;
   }
 }
 .circle:nth-child(2){
@@ -60,10 +69,11 @@
   }
   @include lowEndDevices {
     left: 0;
-    // right: 50%;
     margin: 0 50% 0 30%;
-    // transform: translateX(50%);
     top: 50%;
+  }
+  @include mobile {
+    margin: 0 10%;
   }
 }
 .circle:nth-child(3){
@@ -73,11 +83,12 @@
   }
   @include lowEndDevices {
     left: 0;
-    // right: 50%;
     margin: 0 50% 0 30%;
-    // transform: translateX(50%);
     top: 100%;
   }
+    @include mobile {
+      margin: 0 10%;
+    }
 }
 .circle:nth-child(4){
   left: 69%;
@@ -86,11 +97,12 @@
   }
   @include lowEndDevices {
     left: 0;
-    // right: 50%;
     margin: 0 50% 0 30%;
-    // transform: translateX(50%);
     top: 150%;
   }
+    @include mobile {
+      margin: 0 10%;
+    }
 }
 
 .circle.active {

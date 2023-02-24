@@ -2,12 +2,19 @@ $small-width: 480px; //mobile phones
 $medium-width: 768px; //tablets
 $large-width: 1024px; //small laptops
 
+$maxSmallMobile: 360px;
 $mobilePhones: 480px;
 $tabletMin: 768px;
 $tabletMax: 1024px;
 $smallLaptops: 1280px;
 $bigScreen: 1900px;
 
+
+@mixin smallMobile {
+  @media (max-width: $maxSmallMobile) {
+    @content;
+  }
+}
 @mixin mobile {
   @media (max-width: $mobilePhones) {
     @content;
