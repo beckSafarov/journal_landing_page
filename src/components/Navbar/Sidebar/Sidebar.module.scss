@@ -18,9 +18,6 @@
   background: transparent;
   display: flex;
   justify-content: flex-end;
-  @include tablets{
-    width: 100%;
-  }
   &.active {
     left: 0%;
   }

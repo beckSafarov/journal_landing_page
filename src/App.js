@@ -8,20 +8,25 @@ import PlannedConferencesSection from './components/PlannedConferences/PlannedCo
 import OrganizationsSection from './components/Organizations/OrganizationsSection';
 import OurAddressSection from './components/OurAddressSection/OurAddressSection';
 import Footer from './components/Footer/Footer';
+import { useWindowSize } from './hooks/useWindowSize';
 
 function App() {
+  const {isDesktop} = useWindowSize()
   return (
     <div className={s.container}>
       <div className={s.wrapper}>
         <Navbar />
         <Hero />
-        <SearchSection />
-        <Journals />
-        <Stats />
-        <PlannedConferencesSection />
-        <OrganizationsSection />
-        <OurAddressSection />
-        <Footer />
+        {isDesktop && (
+          <>
+            <SearchSection />
+            <Journals />
+            <Stats />
+            <PlannedConferencesSection />
+            <OrganizationsSection />
+            <OurAddressSection />
+            <Footer /></>
+        )}
       </div>
     </div>
   );
