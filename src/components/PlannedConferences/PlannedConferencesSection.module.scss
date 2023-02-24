@@ -10,6 +10,9 @@
   .cardsContainer{
     @include grid(3);
     gap: 24px;
+    @include lowEndDevices{
+      @include grid(2);
+    }
   }
   .more {
     @include moreSection;

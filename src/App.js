@@ -19,10 +19,10 @@ function App() {
         <Hero />
         <SearchSection />
         <Journals />
+        <PlannedConferencesSection />
         {isDesktop && (
           <>
-            <Stats />
-            <PlannedConferencesSection />
+            {/* <Stats /> */}
             <OrganizationsSection />
             <OurAddressSection />
             <Footer /></>
