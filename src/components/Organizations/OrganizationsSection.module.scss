@@ -7,11 +7,11 @@
     position: relative;
     display: flex;
     gap: 24px;
+    overflow-x: scroll;
   }
   .controls{
     position: absolute; 
     top: 35%; 
-    // background: green;
     width: 104%; 
     margin-left: -25px;
     display: flex;
@@ -19,7 +19,7 @@
     div{
       position: relative;
       background: #FFFFFF;
-      // background: green;
+      background: green;
       cursor: pointer;
       // background: green;
       width: 48px;
@@ -35,6 +35,9 @@
     @media(min-width: 1900px){
       width: 103%;
       left: -1px;
+    }
+    @include lowEndDevices{
+      display: none;
     }
   }
 }

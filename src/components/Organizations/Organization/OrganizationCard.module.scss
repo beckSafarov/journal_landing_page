@@ -15,6 +15,9 @@
       font-size: 24px;
       line-height: 150%;
       color: #353437;
+      @include lowEndDevices{
+        font-size: 20px;
+      }
     }
     .title.active{
       color: rgba(60, 75, 220, 1);
@@ -41,6 +44,9 @@
         }
       }
     }
+  }
+  @include lowEndDevices{
+    width: 400px;
   }
 }
 
