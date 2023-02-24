@@ -1,3 +1,4 @@
+@import '../../styles/mixins';
 .searchBoxContainer {
   padding: 16px 24px;
   display: flex;
@@ -10,23 +11,40 @@
     border: none;
     outline: none;
     border-radius: 8px;
-
+    // background: yellow;
     .icon {
       display: flex;
       align-items: center;
       padding: 20px 0 20px 26px;
       justify-content: center;
       color: #9A999B;
+      @include mobile{
+        padding: 10px 0 10px 13px;
+      }
     }
-
+    @include mobile{
+      @include flexCenter();
+    }
     input {
       height: 58px;
+      // background: green;
+      @include mobile{
+        height: 43.5;
+      }
     }
   }
-}
-.searchBoxContainer.diff{
-  padding: 16px 0 16px 24px;
-  .searchBox{
-    border-radius: 0;
+  &.diff {
+    padding: 16px 0 16px 24px;
+  
+    .searchBox {
+      border-radius: 0;
+    }
+  }
+  &.noSidePadding{
+    padding: 16px 0;
+  }
+  @include mobile{
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }

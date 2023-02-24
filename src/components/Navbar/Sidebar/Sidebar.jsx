@@ -27,7 +27,7 @@ const Sidebar = ({ menuLinks, languages }) => {
             <GrClose />
           </button>
           <div className={s.others}>
-            <Search />
+            <Search noSidePadding />
             <div className={s.langContainer}>
               <Dropdown content={languages}>Русский</Dropdown>
             </div>

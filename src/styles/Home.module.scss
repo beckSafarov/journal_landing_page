@@ -29,16 +29,24 @@ html, body{
 
 @include bigScreens{
   .wrapper {
-      width: 1700px;
-    }
+    width: 1700px;
+  }
+}
+
+@include lowEndDevices{
+  .wrapper {
+    width: 100%;
+    gap: 30px;
+  }
 }
 
 @include tablets{
   .container{
     padding: 30px 40px;
   }
-  .wrapper{
-    width: 100%; 
-    gap: 30px;
+}
+@include mobile{
+  .container{
+    padding: 30px 20px;
   }
 }

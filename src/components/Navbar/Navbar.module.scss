@@ -5,22 +5,18 @@
   background: #FFFFFF;
   border-radius: 24px;
   padding: 28px 24px;
-}
-
-.dropdown{
-  @include flexCenter();
-  gap: 10px;
-  cursor: pointer;
+  @include mobile{
+    padding: 20px 16px;
+  }
 }
 
 .row {
   display: flex;
   gap: 25px;
   justify-content: space-between;
-  @media(min-width: 1900px){
+  @include bigScreens{
     gap: 0;
   }
-  // background: green;
   .menuLinks{
     @include flexCenter();
     cursor: pointer;
@@ -57,7 +53,7 @@
   .rightBlock{
     display: flex;
     gap: 20px;
-    @media(min-width: 1900px){
+    @include bigScreens{
       gap: 40px;
     }
     .langContainer {

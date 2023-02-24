@@ -8,21 +8,26 @@ import PlannedConferencesSection from './components/PlannedConferences/PlannedCo
 import OrganizationsSection from './components/Organizations/OrganizationsSection';
 import OurAddressSection from './components/OurAddressSection/OurAddressSection';
 import Footer from './components/Footer/Footer';
-import { useWindowSize } from './hooks/useWindowSize';
+import useResponsiveDesign from './hooks/useResponsiveDesign';
 
 function App() {
+  const {isDesktop, isTablet} = useResponsiveDesign()
   return (
     <div className={s.container}>
       <div className={s.wrapper}>
         <Navbar />
-        <Hero />
-        <SearchSection />
-        <Journals />
-        <Stats />
-        <PlannedConferencesSection />
-        <OrganizationsSection />
-        <OurAddressSection />
-        <Footer />
+        {(isDesktop || isTablet) && (
+          <>
+            <Hero />
+            <SearchSection />
+            <Journals />
+            <Stats />
+            <PlannedConferencesSection />
+            <OrganizationsSection />
+            <OurAddressSection />
+            <Footer />
+          </>
+        )}
       </div>
     </div>
   );
