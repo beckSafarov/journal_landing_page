@@ -21,9 +21,9 @@ function App() {
         <Journals />
         <Stats />
         <PlannedConferencesSection />
+        <OrganizationsSection />
         {(isDesktop || isTablet) && (
           <>
-            <OrganizationsSection />
             <OurAddressSection />
             <Footer />
           </>
