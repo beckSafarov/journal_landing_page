@@ -19,7 +19,6 @@
     @include mobile{
       padding: 40px 25px 50px 25px;
       width: 100%;
-      align-items: center;
       height: 80vh;
     }
     .title{
@@ -55,6 +54,12 @@
       color: #FFFFFF;
       @include flexCenter();
       gap: 15px;
+      @include mobile{
+        width: 162px;
+        height: 44px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
     }
   }
 }
