@@ -10,6 +10,15 @@
   .journals{
     margin-top: 24px;
     @include grid(4);
+    @include tablets {
+      @include grid(3);
+    }
+    @include smallTablets {
+      @include grid(2);
+    }
+    @include mobile {
+      @include grid(1);
+    }
   }
   .more{
     @include moreSection;

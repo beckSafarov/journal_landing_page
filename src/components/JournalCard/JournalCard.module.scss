@@ -10,7 +10,9 @@
   width: 290px;
   margin-top: 20px;
   padding: 32px 20px;
-
+  @include smallTablets{
+    width: 330px;
+  }
   .imgContainer{
     @include flexCenter();
     .img {

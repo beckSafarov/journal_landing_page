@@ -17,10 +17,10 @@ function App() {
       <div className={s.wrapper}>
         <Navbar />
         <Hero />
+        <SearchSection />
+        <Journals />
         {isDesktop && (
           <>
-            <SearchSection />
-            <Journals />
             <Stats />
             <PlannedConferencesSection />
             <OrganizationsSection />
