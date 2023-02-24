@@ -16,7 +16,7 @@
       font-size: 45px;
       text-align: center;
       color: #5D5D5F;
-      @media(min-width: 1900px){
+      @include bigScreens{
         font-size: 84px;
       }
     }
@@ -28,36 +28,68 @@
       font-size: 21px;
       text-align: center;
       color: #5D5D5F;
-      @media(min-width: 1900px) {
+      @include bigScreens {
         font-size: 32px;
       }
     }
   }
-  @media(min-width: 1900px){
+  @include bigScreens{
     width: 456px;
     height: 456px;
+  }
+  @include tablets{
+    width: 300px;
+    height: 300px;
   }
 }
 
 .circle:nth-child(1){
   left: 0;
+  @include lowEndDevices{
+    left: 0;
+    // right: 50%;
+    margin: 0 50% 0 30%;
+    // transform: translateX(50%);
+    top: 0;
+  }
 }
 .circle:nth-child(2){
   left: 23%;
-  @media(min-width: 1900px){
+  @include bigScreens{
     left: 24%;
+  }
+  @include lowEndDevices {
+    left: 0;
+    // right: 50%;
+    margin: 0 50% 0 30%;
+    // transform: translateX(50%);
+    top: 50%;
   }
 }
 .circle:nth-child(3){
   left: 46%;
-  @media(min-width: 1900px) {
+  @include bigScreens {
     left: 48%;
+  }
+  @include lowEndDevices {
+    left: 0;
+    // right: 50%;
+    margin: 0 50% 0 30%;
+    // transform: translateX(50%);
+    top: 100%;
   }
 }
 .circle:nth-child(4){
   left: 69%;
-  @media(min-width: 1900px) {
+  @include bigScreens {
     left: 72%;
+  }
+  @include lowEndDevices {
+    left: 0;
+    // right: 50%;
+    margin: 0 50% 0 30%;
+    // transform: translateX(50%);
+    top: 150%;
   }
 }
 

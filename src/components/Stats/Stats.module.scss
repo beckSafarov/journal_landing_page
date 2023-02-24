@@ -10,7 +10,7 @@
     @include flexCol;
     height: 300px;
     width: 300px;
-    @media(min-width: 1900px) {
+    @include bigScreens {
         width: 456px;
         height: 456px;
       }
@@ -23,7 +23,7 @@
       border: 1px solid #DADADA;
       border-radius: 1000px;
       
-      @media(min-width: 1900px){
+      @include bigScreens{
         width: 456px;
         height: 456px;
       }
@@ -47,7 +47,11 @@
       color: rgba(60, 75, 220, 1);
     }
   }
-  @media(min-width: 1900px){
+  @include bigScreens{
     min-height: 600px;
+  }
+  @include lowEndDevices{
+    margin-top: 100px;
+    margin-bottom: 600px;
   }
 }

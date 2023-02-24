@@ -11,7 +11,6 @@ import Footer from './components/Footer/Footer';
 import { useWindowSize } from './hooks/useWindowSize';
 
 function App() {
-  const {isDesktop} = useWindowSize()
   return (
     <div className={s.container}>
       <div className={s.wrapper}>
@@ -19,15 +18,11 @@ function App() {
         <Hero />
         <SearchSection />
         <Journals />
+        <Stats />
         <PlannedConferencesSection />
         <OrganizationsSection />
         <OurAddressSection />
         <Footer />
-        {isDesktop && (
-          <>
-            {/* <Stats /> */}
-          </>
-        )}
       </div>
     </div>
   );
