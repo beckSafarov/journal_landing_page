@@ -20,9 +20,9 @@ function App() {
         <SearchSection />
         <Journals />
         <Stats />
+        <PlannedConferencesSection />
         {(isDesktop || isTablet) && (
           <>
-            <PlannedConferencesSection />
             <OrganizationsSection />
             <OurAddressSection />
             <Footer />

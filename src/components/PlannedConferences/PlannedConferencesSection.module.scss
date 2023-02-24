@@ -13,6 +13,11 @@
     @include lowEndDevices{
       @include grid(2);
     }
+    @include mobile{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   .more {
     @include moreSection;
