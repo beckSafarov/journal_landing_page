@@ -1,0 +1,77 @@
+@import '../../../styles/mixins';
+
+.toggle {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 30px;
+  @include flexCenter();
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  @include tablets{
+    width: 100%;
+  }
+  &.active {
+    left: 0%;
+  }
+  .content{
+    position: relative;
+    width: 50%;
+    padding: 100px 20px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    .langContainer {
+      margin-top: 30px;
+    }
+    .menuLinks{
+      padding-top: 30px;
+      @include flexCol;
+      gap: 20px;
+      .simpleLink{
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+    .closeButton{
+      position: absolute;
+      top: 20px;
+      left: 10px;
+      cursor: pointer;
+      background: inherit;
+      border: none;
+      font-size: 30px;
+    }
+    .btnContainer{
+      margin-top: 50px;
+      button{
+        background: transparent;
+        @include flexCenter();
+        width: 100%;
+        padding: 16px 32px;
+        gap: 5px;
+        border: 1px solid #3C4BDC;
+        border-radius: 16px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #3C4BDC;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+

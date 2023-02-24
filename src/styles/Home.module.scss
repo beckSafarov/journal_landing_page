@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './mixins';
 
 :root{
   --max-container-width: 1200px;
@@ -26,8 +27,18 @@ html, body{
   gap: 40px;
 }
 
-@media(min-width: 1900px){
+@include bigScreens{
+  .wrapper {
+      width: 1700px;
+    }
+}
+
+@include tablets{
+  .container{
+    padding: 30px 40px;
+  }
   .wrapper{
-    width: 1700px;
+    width: 100%; 
+    gap: 30px;
   }
 }
