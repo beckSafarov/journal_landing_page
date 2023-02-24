@@ -7,7 +7,9 @@
     position: relative;
     display: flex;
     gap: 24px;
-    overflow-x: scroll;
+    @include lowEndDevices{
+      overflow-x: scroll;
+    }
   }
   .controls{
     position: absolute; 
@@ -19,7 +21,7 @@
     div{
       position: relative;
       background: #FFFFFF;
-      background: green;
+      // background: green;
       cursor: pointer;
       // background: green;
       width: 48px;
