@@ -16,9 +16,9 @@ function App() {
     <div className={s.container}>
       <div className={s.wrapper}>
         <Navbar />
+        <Hero />
         {(isDesktop || isTablet) && (
           <>
-            <Hero />
             <SearchSection />
             <Journals />
             <Stats />

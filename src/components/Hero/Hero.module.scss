@@ -16,6 +16,12 @@
       padding: 80px 0 100px 50px;
       height: 80vh;
     }
+    @include mobile{
+      padding: 40px 25px 50px 25px;
+      width: 100%;
+      align-items: center;
+      height: 80vh;
+    }
     .title{
       font-weight: 600;
       font-size: 56px;
@@ -23,6 +29,9 @@
       color: #FFFFFF;
       @include tablets{
         font-size: 40px;
+      }
+      @include mobile{
+        font-size: 30px;
       }
     }
     .subtitle{
