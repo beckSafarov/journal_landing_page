@@ -16,6 +16,9 @@
   .columnsContainer{
     display: flex;
     justify-content: space-between;
+    @include tablets{
+      @include grid(3);
+    }
     @media(max-width: 1500px){
       gap: 50px;
     }
@@ -76,6 +79,13 @@
           font-size: 20px;
         }
       }
+      @include tablets{
+        max-width: 250px;
+        gap: 25px;
+      }
     }
+  }
+  @include tablets{
+    padding: 30px 50px;
   }
 }

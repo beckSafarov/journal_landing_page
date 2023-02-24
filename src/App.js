@@ -22,10 +22,11 @@ function App() {
         <PlannedConferencesSection />
         <OrganizationsSection />
         <OurAddressSection />
+        <Footer />
         {isDesktop && (
           <>
             {/* <Stats /> */}
-            <Footer /></>
+          </>
         )}
       </div>
     </div>
