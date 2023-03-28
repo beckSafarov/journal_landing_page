@@ -13,15 +13,15 @@ const PlannedConferencesSection = () => {
       const { data } = await axios.get(
         'https://dilmurod7007.pythonanywhere.com/api/conferences'
       )
-      setData(data)
+      setData(data || [])
     })()
   }, [])
-  console.log(data)
+
   return (
     <div className={s.container}>
       <Title>Планируемые конференции</Title>
       <div className={s.cardsContainer}>
-        {data.map((cardData, i) => (
+        {data?.map?.((cardData, i) => (
             <PlannedConferenceCard key={i} isActive={i === 1} data={cardData} />
           ))}
         {/* {Array(12)

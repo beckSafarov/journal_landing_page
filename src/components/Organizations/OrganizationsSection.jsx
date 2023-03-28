@@ -22,7 +22,7 @@ const OrganizationsSection = () => {
     <div className={s.container}>
       <Title>Организации</Title>
       <div className={s.cardsContainer}>
-        {data.map((cardData, i) => (
+        {data?.map?.((cardData, i) => (
           <OrganizationCard data={cardData} key={i} isActive={i===1}/>
         ))}
         <div className={s.controls}>

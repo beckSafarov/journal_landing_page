@@ -13,7 +13,7 @@ const Journals = () => {
       const { data } = await axios.get(
         'https://dilmurod7007.pythonanywhere.com/api/journals'
       )
-      setData(data.results)
+      setData(data?.results || [])
     })()
   }, [])
   
